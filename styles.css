@@ -279,6 +279,10 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        background-size: cover;
+        background-position: center
+    }
     .cards {
         flex-direction: column;
     }
@@ -338,6 +342,8 @@ button:hover {
 
     body {
         font-size: 16px;
+        margin: 0;
+        padding: 0;
     }
 
     header {
