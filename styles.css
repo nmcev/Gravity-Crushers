@@ -5,6 +5,9 @@ body {
     font-family: 'Lexend', sans-serif;
 }
 
+html {
+    Scroll-behavior: smooth;
+}
 header {
     position: relative;
     height: 100vh;
@@ -279,10 +282,11 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-    header{
+    header {
         background-size: cover;
         background-position: center
     }
+
     .cards {
         flex-direction: column;
     }
