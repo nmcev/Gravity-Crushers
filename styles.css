@@ -1,0 +1,362 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-family: 'Lexend', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('assets/teamPic.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.arrowDown-icon {
+    cursor: pointer;
+}
+
+.bottom {
+    position: absolute;
+    inset: auto 0 0;
+    bottom: 0;
+    padding: 0.5rem;
+    /* Adjust the padding value as desired */
+    background-color: #3f3b22e2;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    color: #eee;
+}
+
+.para-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(230, 230, 230);
+    height: 100%;
+    margin: 0;
+}
+
+.para-h>p {
+    font-size: 1.2rem;
+    color: #ada6a6;
+}
+
+.list>ul {
+    display: flex;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 100px;
+    top: 2rem;
+    gap: 52px;
+    list-style-type: none;
+}
+
+.list>ul>li {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.main {
+    min-height: 180vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    color: #eee;
+    position: relative;
+    z-index: 1;
+}
+
+.header-up {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 0.5em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 30px;
+    height: auto;
+}
+
+.card>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.card>div>p,
+h2 {
+    padding-top: 0.5rem;
+    margin: 0.5rem;
+}
+
+.card>div>h2 {
+    font-size: 2rem;
+}
+
+.card>div>p {
+    max-width: 20rem;
+}
+
+.card>img {
+    border-radius: 20px;
+    width: 25rem;
+    height: 20rem;
+}
+
+.footer {
+    position: relative;
+    min-height: 38vh;
+    background-color: #0c1c5c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-footer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #eee;
+    padding-left: 25rem;
+    padding-bottom: 3rem;
+}
+
+.list-footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-footer>ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.list-footer>ul>li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.thanks-part>p>a {
+    text-decoration: underline;
+    color: #eee;
+}
+
+.thanks-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #eee;
+    font-family: 'Caveat', cursive;
+}
+
+button {
+    display: flex;
+    height: 80%;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+button:hover {
+    color: #000;
+    background: rgb(255, 218, 87);
+}
+
+.team-name {
+    font-size: 6rem;
+}
+
+@keyframes bubbleUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+#scrollToTheMiddle {
+    bottom: 0;
+    animation: bubbleUp 2.7s infinite;
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10em;
+    gap: 4rem;
+}
+
+.section-one>img {
+    display: flex;
+    width: 600px;
+    height: auto;
+    position: relative;
+    left: 5rem;
+    opacity: 0.8;
+}
+
+.section-one>.text {
+    max-width: 40rem;
+    color: #ccc;
+    font-size: 1.25rem;
+}
+
+.second-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/night.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.text>h2 {
+    font-size: 2rem;
+    display: flex;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .section-one {
+        flex-direction: column;
+        padding-top: 5em;
+    }
+
+    .card>img {
+        width: 100%;
+    }
+
+    .section-one>img {
+        max-width: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-bottom: 4rem;
+    }
+
+    .text>h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-one {
+        padding-top: 3em;
+        text-align: center;
+    }
+
+    .section-one>.text>h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        padding: 20px;
+        max-width: 300px;
+    }
+
+    .card>img {
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .list-footer {
+        padding-left: 2rem;
+    }
+
+    .thanks-part {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .list>ul {
+        right: 10px;
+    }
+
+    .main {
+        height: auto;
+    }
+
+    .container {
+        padding-top: 2rem;
+    }
+
+    .cards {
+        gap: 2rem;
+    }
+}
