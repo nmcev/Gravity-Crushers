@@ -3,11 +3,14 @@ body {
     margin: 0;
     font-family: 'Cinzel', serif;
     font-family: 'Lexend', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 html {
     Scroll-behavior: smooth;
 }
+
 header {
     position: relative;
     height: 100vh;
@@ -282,6 +285,11 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .list>ul {
+        display: flex;
+        width: 90%;
+    }
+
     header {
         background-size: cover;
         background-position: center
@@ -348,6 +356,8 @@ button:hover {
         font-size: 16px;
         margin: 0;
         padding: 0;
+        width: auto;
+        overflow-x: hidden;
     }
 
     header {
@@ -364,9 +374,19 @@ button:hover {
 
     .container {
         padding-top: 2rem;
+        width: 100%;
+        max-width: 100%;
     }
 
     .cards {
         gap: 2rem;
+    }
+
+    .team-name {
+        max-width: 32rem;
+    }
+
+    html {
+        overflow-x: hidden;
     }
 }
