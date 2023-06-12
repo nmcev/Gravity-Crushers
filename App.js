@@ -51,3 +51,5 @@ function changeHeaderText() {
 }
 
 setInterval(changeHeaderText, 3000);
+
+AOS.init();
