@@ -21,10 +21,44 @@
 
 <body>
     <header>
+
+        <dialog id="modal" class="non">
+            <div class="modal">
+                <h2>Contact Us!</h2>
+                <form action="" method="dialog">
+                    <div class="name-form">
+                        <div class="group">
+                            <input required="" type="text" class="input">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Name</label>
+                        </div>
+                    </div>
+
+                    <div class="email-form">
+                        <div class="group">
+                            <input required="" type="text" class="input">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <button class="button"> Get in touch
+
+                        <button id="close-modal" class="noselect close-button"><span class="text"></span><span
+                                class="icon"></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z">
+                                </path>
+                            </svg></button>
+                </form>
+            </div>
+        </dialog>
         <div class="list">
             <ul>
                 <li class="activity">Activity</li>
-                <li>Contact</li>
+                <li id="open-modal">Contact</li>
                 <li>Location</li>
             </ul>
         </div>
@@ -119,7 +153,7 @@
             </ul>
         </div>
         <div class="btn">
-            <button id="scrollToTopButton">Scroll to Top</button>
+            <button class="top-button" id="scrollToTopButton">Scroll to Top</button>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

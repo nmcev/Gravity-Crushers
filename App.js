@@ -3,6 +3,10 @@ const scrollToTheMiddle = document.getElementById('scrollToTheMiddle');
 const mainSection = document.querySelector('.main');
 const activityListItem = document.querySelector('.list .activity');
 const dynamicHeader = document.getElementById('dynamic-header');
+const modal = document.getElementById('modal');
+const openModal = document.getElementById('open-modal');
+const closeModal = document.getElementById('close-modal');
+
 const headerTexts = [
     "Gravity Crushers",
     "Board Blazers",
@@ -51,5 +55,13 @@ function changeHeaderText() {
 }
 
 setInterval(changeHeaderText, 3000);
+
+openModal.addEventListener('click', () => {
+    modal.showModal();
+})
+
+closeModal.addEventListener('click', () => {
+    modal.close();
+})
 
 AOS.init();
