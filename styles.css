@@ -473,3 +473,15 @@ button:hover {
         padding: 10px 15px;
     }
 }
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    /* Adjust the duration and timing function as desired */
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    /* Adjust the duration and timing function as desired */
+}
