@@ -139,7 +139,7 @@ h2 {
 
 .card>img {
     border-radius: 20px;
-    width: 25rem;
+    max-width: 25rem;
     height: 20rem;
 }
 
@@ -249,17 +249,19 @@ h2 {
 
 .section-one>img {
     display: flex;
-    width: 600px;
+    max-width: 30%;
     height: auto;
     position: relative;
     left: 5rem;
     opacity: 0.8;
+    padding-bottom: 5rem;
 }
 
 .section-one>.text {
-    max-width: 40rem;
+    max-width: 35rem;
     color: #ccc;
     font-size: 1.25rem;
+    word-wrap: break-word;
 }
 
 .second-container::before {
@@ -386,6 +388,11 @@ label {
 .input:focus~.bar:before,
 .input:focus~.bar:after {
     width: 50%;
+}
+
+.location {
+    text-decoration: none;
+    color: #fff;
 }
 
 .highlight {
